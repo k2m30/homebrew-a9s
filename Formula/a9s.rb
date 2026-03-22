@@ -5,21 +5,21 @@
 class A9s < Formula
   desc "Terminal UI AWS Resource Manager"
   homepage "https://github.com/k2m30/a9s"
-  version "3.0.0-alpha.7"
+  version "3.0.0-alpha.8"
   license "GPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/k2m30/a9s/releases/download/v3.0.0-alpha.7/a9s_3.0.0-alpha.7_darwin_amd64.tar.gz"
-      sha256 "3d5c9f2ddf3c7bd8f0d2defd2d41cfb3435947dbdc46842d7bf71e198613a083"
+      url "https://github.com/k2m30/a9s/releases/download/v3.0.0-alpha.8/a9s_3.0.0-alpha.8_darwin_amd64.tar.gz"
+      sha256 "6f4b78379be1dc777727474fb1c1e8dbc7b13c3259c5490147be01e7c488b72f"
 
       define_method(:install) do
         bin.install "a9s"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/k2m30/a9s/releases/download/v3.0.0-alpha.7/a9s_3.0.0-alpha.7_darwin_arm64.tar.gz"
-      sha256 "6dd94d1d61cc2ee205af54ef5016fed70131224df2ddbf6a525ae880934a7625"
+      url "https://github.com/k2m30/a9s/releases/download/v3.0.0-alpha.8/a9s_3.0.0-alpha.8_darwin_arm64.tar.gz"
+      sha256 "b21ec9aa0f75dfca29efa5ce1c64d06ff34a86a1ba7cf19b05e331f3833ec896"
 
       define_method(:install) do
         bin.install "a9s"
@@ -29,15 +29,15 @@ class A9s < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k2m30/a9s/releases/download/v3.0.0-alpha.7/a9s_3.0.0-alpha.7_linux_amd64.tar.gz"
-      sha256 "8a1674c7531792c012d36bb7ec1ff99ccac252730d91422a94ef01f1ce4ae5a3"
+      url "https://github.com/k2m30/a9s/releases/download/v3.0.0-alpha.8/a9s_3.0.0-alpha.8_linux_amd64.tar.gz"
+      sha256 "d160ac8c7cdf16ee7a90d4164751190c276e342f25a0f662248d67a493d1f727"
       define_method(:install) do
         bin.install "a9s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k2m30/a9s/releases/download/v3.0.0-alpha.7/a9s_3.0.0-alpha.7_linux_arm64.tar.gz"
-      sha256 "3b36bac44bb2b3f61ca3d60aa9f596eb9e906a6a756a24287847c70bc665f69a"
+      url "https://github.com/k2m30/a9s/releases/download/v3.0.0-alpha.8/a9s_3.0.0-alpha.8_linux_arm64.tar.gz"
+      sha256 "378104ca3c05d057b5018d6efe00bdcb08bb005da016f138f5c2f16db5adbb67"
       define_method(:install) do
         bin.install "a9s"
       end
