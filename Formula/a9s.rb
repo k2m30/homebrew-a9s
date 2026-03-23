@@ -5,21 +5,21 @@
 class A9s < Formula
   desc "Terminal UI AWS Resource Manager"
   homepage "https://github.com/k2m30/a9s"
-  version "3.0.0-alpha.8"
+  version "3.0.0"
   license "GPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/k2m30/a9s/releases/download/v3.0.0-alpha.8/a9s_3.0.0-alpha.8_darwin_amd64.tar.gz"
-      sha256 "6f4b78379be1dc777727474fb1c1e8dbc7b13c3259c5490147be01e7c488b72f"
+      url "https://github.com/k2m30/a9s/releases/download/v3.0.0/a9s_3.0.0_darwin_amd64.tar.gz"
+      sha256 "6b563f7e50c02746fefe19599f12e5860fd0e2cd248adb50ea88872b9f0d6745"
 
       define_method(:install) do
         bin.install "a9s"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/k2m30/a9s/releases/download/v3.0.0-alpha.8/a9s_3.0.0-alpha.8_darwin_arm64.tar.gz"
-      sha256 "b21ec9aa0f75dfca29efa5ce1c64d06ff34a86a1ba7cf19b05e331f3833ec896"
+      url "https://github.com/k2m30/a9s/releases/download/v3.0.0/a9s_3.0.0_darwin_arm64.tar.gz"
+      sha256 "45f1086fc6cd71b51811a5ddd2c1af579c059e9b852a2b078d49230a4c69372e"
 
       define_method(:install) do
         bin.install "a9s"
@@ -29,15 +29,15 @@ class A9s < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k2m30/a9s/releases/download/v3.0.0-alpha.8/a9s_3.0.0-alpha.8_linux_amd64.tar.gz"
-      sha256 "d160ac8c7cdf16ee7a90d4164751190c276e342f25a0f662248d67a493d1f727"
+      url "https://github.com/k2m30/a9s/releases/download/v3.0.0/a9s_3.0.0_linux_amd64.tar.gz"
+      sha256 "06f1c5f1e0e072aa00ba3d22ae694ebc73fdec2732442fbcfe645f2e7d354aa4"
       define_method(:install) do
         bin.install "a9s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k2m30/a9s/releases/download/v3.0.0-alpha.8/a9s_3.0.0-alpha.8_linux_arm64.tar.gz"
-      sha256 "378104ca3c05d057b5018d6efe00bdcb08bb005da016f138f5c2f16db5adbb67"
+      url "https://github.com/k2m30/a9s/releases/download/v3.0.0/a9s_3.0.0_linux_arm64.tar.gz"
+      sha256 "c3f46d48864511082feeac73f581a9e880f1d16c03f7ca84ec8d35092f855fc2"
       define_method(:install) do
         bin.install "a9s"
       end
