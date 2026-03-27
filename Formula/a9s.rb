@@ -5,21 +5,21 @@
 class A9s < Formula
   desc "Terminal UI AWS Resource Manager"
   homepage "https://github.com/k2m30/a9s"
-  version "3.17.0"
+  version "3.18.0"
   license "GPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/k2m30/a9s/releases/download/v3.17.0/a9s_3.17.0_darwin_amd64.tar.gz"
-      sha256 "38c094536e634af15f8095a9433b4e0895fcf153d15cb6e7473d62fda10de1e3"
+      url "https://github.com/k2m30/a9s/releases/download/v3.18.0/a9s_3.18.0_darwin_amd64.tar.gz"
+      sha256 "bdc7617824a82558202df89c981d429c17f221b9fd70a2d0bc28adc614799e00"
 
       define_method(:install) do
         bin.install "a9s"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/k2m30/a9s/releases/download/v3.17.0/a9s_3.17.0_darwin_arm64.tar.gz"
-      sha256 "1e9217b8133dfcec43cd1bc21f132a633207bfd174a7ff2061b452ee6c6c1d19"
+      url "https://github.com/k2m30/a9s/releases/download/v3.18.0/a9s_3.18.0_darwin_arm64.tar.gz"
+      sha256 "3b276ac22d254f858c9e015ed4d4349d08fb526b6bd8f94989d774b89fa13e52"
 
       define_method(:install) do
         bin.install "a9s"
@@ -29,15 +29,15 @@ class A9s < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k2m30/a9s/releases/download/v3.17.0/a9s_3.17.0_linux_amd64.tar.gz"
-      sha256 "006bf381fe5c1af99b3980ca87998027e74104e80d5168dd44532cdb468fbedb"
+      url "https://github.com/k2m30/a9s/releases/download/v3.18.0/a9s_3.18.0_linux_amd64.tar.gz"
+      sha256 "723e1a60ee69b5807b24fd04ffdc22a1fed6f147674725e92f96e996a57f9a96"
       define_method(:install) do
         bin.install "a9s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k2m30/a9s/releases/download/v3.17.0/a9s_3.17.0_linux_arm64.tar.gz"
-      sha256 "5dc68046a279f296983c00a5b783451282307d6e272ab92801e5e96eb5d328c8"
+      url "https://github.com/k2m30/a9s/releases/download/v3.18.0/a9s_3.18.0_linux_arm64.tar.gz"
+      sha256 "0297900c2d59d7f23f2321a7a89edaeaf74f2785d1746034b5180fdb8e4a9a1d"
       define_method(:install) do
         bin.install "a9s"
       end
