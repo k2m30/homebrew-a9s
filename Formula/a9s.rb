@@ -11,7 +11,7 @@ class A9s < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/k2m30/a9s/releases/download/v3.26.0/a9s_3.26.0_darwin_amd64.tar.gz"
-      sha256 "fecd2f4b75d6ceedd81a85ba6973e5c3af5e646f3d4bccb163d2aac5df29e875"
+      sha256 "e26cadb7a5da70f5005c1b10dc12d7196ae4426aea24a84bbbefc22b0a3609b0"
 
       define_method(:install) do
         bin.install "a9s"
@@ -19,7 +19,7 @@ class A9s < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/k2m30/a9s/releases/download/v3.26.0/a9s_3.26.0_darwin_arm64.tar.gz"
-      sha256 "267a7c40ed0589ed83f1b3e57a0b50ffc0343aa4dd4a3d92f07b0c9ee758afd7"
+      sha256 "dc4195a11b1caef8f44bdf9e004c7062927ac8ccc03e7fd4e4106b682a71f6ad"
 
       define_method(:install) do
         bin.install "a9s"
@@ -30,14 +30,14 @@ class A9s < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/k2m30/a9s/releases/download/v3.26.0/a9s_3.26.0_linux_amd64.tar.gz"
-      sha256 "50c1765c112e5fbd5c1abd2c47e414871fefff5bef4c5a9c54aced8cddc3d5fd"
+      sha256 "e65abb6a551009b9cf42b894b612283d18f80a682a43792bc8ab71c66fcfd4cd"
       define_method(:install) do
         bin.install "a9s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/k2m30/a9s/releases/download/v3.26.0/a9s_3.26.0_linux_arm64.tar.gz"
-      sha256 "e1d25b9b0e3de6626813316d24336f490df56bc2aef2ae5db0872e9f5a9f7555"
+      sha256 "8955e3b13ab80af0fa2a98b8e6c49c2f6e5fad7b9d8ce8f7983db7316d2a1460"
       define_method(:install) do
         bin.install "a9s"
       end
